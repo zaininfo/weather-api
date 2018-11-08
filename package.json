@@ -1,0 +1,52 @@
+{
+  "name": "weather-api",
+  "version": "0.0.1",
+  "description": "A simple REST API to fetch weather data with fast retrievals from persistent cache.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "rest",
+    "redis",
+    "docker"
+  ],
+  "author": "Zain ul Abideen",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "compression": "^1.7.1",
+    "config": "^1.29.2",
+    "express": "^4.16.2",
+    "express-promise-router": "^3.0.1",
+    "express-redis-cache": "^1.0.0",
+    "express-winston": "^2.4.0",
+    "got": "^9.3.1",
+    "invariant": "^2.2.2",
+    "js-yaml": "^3.10.0",
+    "lodash": "^4.17.11",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.17.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "nodemon": "^1.14.11",
+    "standard": "^10.0.3"
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs",
+      "transform-object-rest-spread"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "babel"
+    ]
+  }
+}

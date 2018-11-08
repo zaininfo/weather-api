@@ -1,0 +1,14 @@
+app:
+  port: 8000
+log:
+  level: debug
+  errorFile: ./logs/error.log
+  otherFile: ./logs/combined.log
+cache:
+  prefix: weather
+  host: localhost
+  port: 6379
+  expiryInSec: 10800
+service:
+  url: api.openweathermap.org/data/2.5/forecast
+  appId: c2f9bf12bc02c110cbff2f34499efad6
